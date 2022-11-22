@@ -1,0 +1,22 @@
+{% extends 'layouts/app.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-8 offset-md-2 ">
+                <div class="container col-md-8 border rounded image-container p-4">
+                    <img src="{{ path }}" class="img-thumbnail img-fluid " onerror="this.className='invisible'">
+                    <div class="p-2 text-center">
+                        <p>Имя файла: {{ file.filename }}</p>
+                        <p>Формат файла: {{ file.format }}</p>
+                        <p>Размер файла: {{ file.size }} байт</p>
+                        <a href="{{ path }}" class="text-decoration-none text-white" download>
+                            <button type="button" class="btn btn-primary col-8">Скачать</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

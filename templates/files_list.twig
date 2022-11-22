@@ -1,0 +1,25 @@
+{% extends 'layouts/app.twig' %}
+
+{% block body %}
+    <div class="container col-md-4 text-center">
+        <h4 class="text-center ">Последние загруженные файлы</h4>
+        <ul class="list-group-flush">
+            {% for file in files %}
+                <a href="/file/{{ file.filename }}" class="text-decoration-none ">
+                    <li class="list-group-item list-group-item-action">{{ file.filename }}.{{  file.format }}</li>
+                </a>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="container col-md-4 text-center">
+        {% if pagination.needed %}
+            <div class="list-group-flush">
+                {% for i in 1..pagination.lastpage %}
+                    <a class="{% if i == pagination.page %}active{% endif %} item text-decoration-none" href="?page={{ i }}">{{ i }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+
+{% endblock %}
