@@ -2500,16 +2500,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v6.1.5",
+            "version": "v6.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "9ae74e40fde37aba127ad5db65c5193f41f86f95"
+                "reference": "ee5d5b88162684a1377706f9c25125e97685ee61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/9ae74e40fde37aba127ad5db65c5193f41f86f95",
-                "reference": "9ae74e40fde37aba127ad5db65c5193f41f86f95",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/ee5d5b88162684a1377706f9c25125e97685ee61",
+                "reference": "ee5d5b88162684a1377706f9c25125e97685ee61",
                 "shasum": ""
             },
             "require": {
@@ -2576,7 +2576,7 @@
                 "psr6"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache/tree/v6.1.5"
+                "source": "https://github.com/symfony/cache/tree/v6.1.7"
             },
             "funding": [
                 {
@@ -2592,7 +2592,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-08T09:34:40+00:00"
+            "time": "2022-10-28T16:23:08+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -3384,16 +3384,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.26.0",
+            "version": "v1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace"
+                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/cfa0ae98841b9e461207c13ab093d76b0fa7bace",
-                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
+                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
                 "shasum": ""
             },
             "require": {
@@ -3402,7 +3402,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.26-dev"
+                    "dev-main": "1.27-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -3447,7 +3447,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.26.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -3463,7 +3463,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T07:21:04+00:00"
+            "time": "2022-11-03T14:55:06+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
