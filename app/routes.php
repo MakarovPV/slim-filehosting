@@ -13,7 +13,7 @@ use App\Application\Database\FileDataGateway;
 use App\Application\Database\Connection;
 
 return function (App $app) {
-    $loader = new FilesystemLoader('..\templates');
+    $loader = new FilesystemLoader('../templates');
     $twig = new Environment($loader);
     $gateway = new FileDataGateway(new Connection());
 

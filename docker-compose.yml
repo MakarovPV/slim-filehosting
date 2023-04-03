@@ -6,8 +6,11 @@ volumes:
 
 services:
     slim:
-        image: php:7-alpine
+        image: php:8.1-fpm
         working_dir: /var/www
+        build:
+            context: .
+            dockerfile: _docker/app/Dockerfile
         command: php -S 0.0.0.0:8080 -t public
         environment:
             docker: "true"
@@ -16,3 +19,18 @@ services:
         volumes:
             - .:/var/www
             - logs:/var/www/logs
+        container_name: slim_app
+
+    db:
+        image: mysql:5.7.40
+        restart: always
+        volumes:
+            - ./tmp/db:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: files_downloader
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_ROOT_HOST: '%'
+        ports:
+            - 8101:3306
+        command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+        container_name: slim_db

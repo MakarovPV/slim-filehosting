@@ -43,8 +43,8 @@ return function (ContainerBuilder $containerBuilder) {
                         // of valid parameters: https://www.doctrine-project.org/projects/doctrine-dbal/en/current/reference/configuration.html
                         'connection' => [
                             'driver' => 'pdo_mysql',
-                            'host' => 'localhost',
-                            'port' => 3306,
+                            'host' => '127.0.0.1',
+                            'port' => 8101,
                             'dbname' => 'files_downloader',
                             'user' => 'root',
                             'password' => 'root',
